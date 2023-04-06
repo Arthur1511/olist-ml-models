@@ -33,7 +33,7 @@ tb_summary AS (
   SELECT 
       idVendedor,
       avg(vlNota) as avgNota,
-    --   percentile(vlNota, 0.5) as medianNota,
+      -- percentile(vlNota, 0.5) as medianNota,
       min(vlNota) as minNota,
       max(vlNota) as maxNota,
       count(vlNota) / count(idPedido) as pctAvaliacao
